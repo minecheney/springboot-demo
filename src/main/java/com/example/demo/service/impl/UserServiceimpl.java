@@ -1,7 +1,7 @@
 package com.example.demo.service.impl;
 
 import com.example.demo.bean.User;
-import com.example.demo.mapper.UserDAO;
+import com.example.demo.mapper.UserMapper;
 import com.example.demo.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
@@ -12,7 +12,7 @@ import java.util.List;
 public class UserServiceimpl implements UserService {
 
     @Autowired
-    private UserDAO userDAO;
+    private UserMapper userDAO;
 
     @Override
     public List<User> findAllUser() {

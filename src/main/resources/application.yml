@@ -39,3 +39,10 @@ spring:
     cache: false
     encoding: UTF-8
     mode: HTML5
+
+logback:
+  appender: console
+  level: DUBUG
+  path: c://log/manage
+  file: manage
+  log-max-history: 30

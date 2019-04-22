@@ -6,6 +6,8 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 
 @Repository
-public interface UserDAO {
+public interface UserMapper {
     List<User> findAllUser();
+
+    User findByUserName(String userName);
 }
