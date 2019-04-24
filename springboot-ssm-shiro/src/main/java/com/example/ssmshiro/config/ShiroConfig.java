@@ -19,7 +19,7 @@ public class ShiroConfig {
         //设置登录url
         shiroFilterFactoryBean.setLoginUrl("/login");
         //设置成功后跳转的url
-        shiroFilterFactoryBean.setSuccessUrl("/index");
+        shiroFilterFactoryBean.setSuccessUrl("/list");
         //未授权的url
         shiroFilterFactoryBean.setUnauthorizedUrl("/403");
         LinkedHashMap<String, String> filterChainDefinitionMap = new LinkedHashMap<>();
